@@ -12,7 +12,7 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="font-orbitron text-xl font-bold text-white">
-              Game<span className="text-red-500">Verse</span>
+              Игры<span className="text-red-500"> Маклая</span>
             </h1>
           </div>
 

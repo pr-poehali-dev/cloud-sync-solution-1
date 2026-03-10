@@ -27,12 +27,26 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-24 px-6 bg-card">
+    <section className="py-24 px-6" style={{ background: "linear-gradient(180deg, #ffffff 0%, #fdf2f8 100%)" }}>
+      {/* Аниме баннер */}
+      <div className="max-w-6xl mx-auto mb-16 rounded-2xl overflow-hidden relative h-56 md:h-72">
+        <img
+          src="https://cdn.poehali.dev/projects/31c3d270-ae0b-401a-92a4-255beb1cf7dc/files/1589dabe-e647-4efe-a529-ae3364e5e84e.jpg"
+          alt="anime gaming"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/70 via-pink-800/40 to-transparent flex items-center px-10">
+          <div>
+            <p className="text-white font-orbitron text-2xl md:text-4xl font-bold">Сообщество геймеров</p>
+            <p className="text-pink-200 mt-2 text-sm md:text-base">Тысячи читателей уже с нами</p>
+          </div>
+        </div>
+      </div>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют геймеры</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорит наше сообщество о портале GameVerse
+          <h2 className="text-4xl font-bold text-purple-800 mb-4 font-sans">Нам доверяют геймеры</h2>
+          <p className="text-xl text-purple-500 max-w-2xl mx-auto leading-relaxed">
+            Что говорит наше сообщество о портале Игры Маклая
           </p>
         </div>
 

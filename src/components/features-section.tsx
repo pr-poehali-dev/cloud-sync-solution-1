@@ -3,40 +3,40 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Глубокие обзоры игр",
+    description: "Детальный анализ геймплея, графики, сюжета и механик — честная оценка без рекламы и предвзятости.",
+    icon: "gamepad",
+    badge: "Обзор",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Пошаговые прохождения",
+    description: "Подробные гайды для одиночных и многопользовательских игр: боссы, секреты, достижения и коллекционные предметы.",
+    icon: "map",
+    badge: "Гайды",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
+    title: "Онлайн-игры",
+    description: "Актуальная информация о MMO, Battle Royale и кооперативных играх — рейтинги, мета-анализ и советы.",
     icon: "globe",
-    badge: "Точность",
+    badge: "Онлайн",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
+    title: "Аналитика и рейтинги",
+    description: "Объективные оценки и сравнения игр по жанрам, платформам и целевой аудитории.",
+    icon: "chart",
+    badge: "Рейтинг",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "Новости индустрии",
+    description: "Свежие новости об анонсах, обновлениях, DLC и событиях игровой индустрии со всего мира.",
+    icon: "news",
+    badge: "Новости",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Сравнение платформ",
+    description: "Анализ игр на PC, PlayStation, Xbox и Nintendo Switch — выбирайте лучшую версию для вашей платформы.",
+    icon: "compare",
+    badge: "Платформы",
   },
 ]
 
@@ -45,9 +45,9 @@ export function FeaturesSection() {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Всё о мире игр</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Профессиональный контент для геймеров: от инди-хитов до блокбастеров
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "gamepad" && "🎮"}
+                    {feature.icon === "map" && "🗺️"}
+                    {feature.icon === "globe" && "🌐"}
+                    {feature.icon === "chart" && "📊"}
+                    {feature.icon === "news" && "📰"}
+                    {feature.icon === "compare" && "⚔️"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
